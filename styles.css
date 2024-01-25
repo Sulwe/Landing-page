@@ -1,0 +1,66 @@
+.icons img {
+    width: 1.5rem;
+    height: auto;
+
+}
+.upper img, .users img {
+    width: 2rem;
+    height: auto;
+}
+.lower img {
+    width: 2.5rem;
+    height: auto;
+}
+
+body {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+
+}
+.dashboard {
+    grid-area: 1 / 1 / 6 / 2;
+    background-color: rgb(9, 162, 208);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.dashboard img {
+    width: 1.5rem;
+    height: auto;
+    filter: invert(1);
+
+}
+.dashboard h1 img {
+    width: 2.5rem;
+    height: auto;
+}
+
+nav {
+    grid-area: 1 / 2 / 2 / 6;
+}
+main {
+    grid-area: 2 / 2 / 6 / 6;
+}
+li {
+    list-style: none;
+}
+.dashboard li {
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items:  center;
+    gap: 1rem;
+}
+.dashboard ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.dashboard h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    gap: 1rem;
+}
